@@ -1,35 +1,197 @@
+// import React from 'react';
+// import { Link } from "react-router-dom";
+// import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+// const Hero = () => {
+//   return (
+//     <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-[80px] lg:pt-[120px] ">
+//       <div className="flex flex-col lg:flex-row items-center justify-between">
+        
+//         {/* Lottie Animation */}
+//         <div className="w-full lg:w-1/2 order-1 lg:order-2 mb-8 lg:mb-0">
+//           <div className="w-full max-w-[600px] mx-auto lg:ml-auto">
+//             <DotLottieReact
+//               src="https://lottie.host/bcea4257-8c6e-4956-aa7f-9155acc439ca/vHPaDTzOdq.lottie"
+//               loop
+//               autoplay
+//               className="w-full aspect-square rounded-lg shadow-lg"
+//             />
+//           </div>
+//         </div>
+
+//         {/* Text content section */}
+//         <div className="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left lg:pr-8 lg:ml-12">
+//           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium mb-4 tracking-wide">
+//             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#035bff] via-white to-[#4c70b3] leading-tight">
+//               A Game changing platform for AI Innovators
+//             </span>
+//           </h1>
+//           <p className="text-base sm:text-lg font-medium mb-6">
+//             Empowering Students and Professionals to Build the Future of AI.
+//             Join a community of passionate minds developing Innovative AI
+//             Solutions that enhance human productivity.
+//           </p>
+//           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+//             <Link
+//               to="about"
+//               className="bg-white text-black border rounded-2xl px-6 py-3 hover:bg-opacity-90 transition-colors w-full sm:w-auto text-center"
+//             >
+//               What we do ?
+//             </Link>
+//             <Link
+//               to="jointeam"
+//               className="bg-black text-white border rounded-2xl px-6 py-3 hover:bg-opacity-90 transition-colors w-full sm:w-auto text-center"
+//             >
+//               Join Team
+//             </Link>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero; 
+// import React from 'react';
+// import { Link } from "react-router-dom";
+// import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+// const Hero = () => {
+//   return (
+//     <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-[80px] lg:pt-[120px] overflow-hidden">
+//       {/* Top right gradient */}
+//       <div className="absolute top-0 right-0 w-[500px] h-[500px] opacity-30">
+//         <div className="w-full h-full bg-[radial-gradient(circle_at_center,#8C81FF_0%,#A0A0A0_32%,transparent_70%)]" />
+//       </div>
+
+//       {/* Bottom left gradient */}
+//       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] opacity-30">
+//         <div className="w-full h-full bg-[radial-gradient(circle_at_center,#1000C1_0%,#8C81FF_22%,transparent_70%)]" />
+//       </div>
+
+//       <div className="relative flex flex-col lg:flex-row items-center justify-between">
+//         {/* Lottie Animation */}
+//         <div className="w-full lg:w-1/2 order-1 lg:order-2 mb-8 lg:mb-0">
+//           <div className="w-full max-w-[600px] mx-auto lg:ml-auto">
+//             <DotLottieReact
+//               src="https://lottie.host/bcea4257-8c6e-4956-aa7f-9155acc439ca/vHPaDTzOdq.lottie"
+//               loop
+//               autoplay
+//               className="w-full aspect-square rounded-lg shadow-lg"
+//             />
+//           </div>
+//         </div>
+
+//         {/* Text content section */}
+//         <div className="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left lg:pr-8 lg:ml-12">
+//           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium mb-4 tracking-wide">
+//             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#035bff] via-white to-[#4c70b3] leading-tight">
+//               A Game changing platform for AI Innovators
+//             </span>
+//           </h1>
+//           <p className="text-base sm:text-lg font-medium mb-6">
+//             Empowering Students and Professionals to Build the Future of AI.
+//             Join a community of passionate minds developing Innovative AI
+//             Solutions that enhance human productivity.
+//           </p>
+//           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+//             <Link
+//               to="about"
+//               className="bg-white text-black border rounded-2xl px-6 py-3 hover:bg-opacity-90 transition-colors w-full sm:w-auto text-center"
+//             >
+//               What we do ?
+//             </Link>
+//             <Link
+//               to="jointeam"
+//               className="bg-black text-white border rounded-2xl px-6 py-3 hover:bg-opacity-90 transition-colors w-full sm:w-auto text-center"
+//             >
+//               Join Team
+//             </Link>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
+
+
+import React from 'react';
+import { Link } from "react-router-dom";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Hero = () => {
   return (
-    <div className="flex mt-20">
-        <div className="  p-10 ml-32 w-[700px]">
+    <div className=" mx-auto sm:px-6  pt-[80px] lg:pt-[120px] overflow-hidden">
+      {/* Top right blowing gradient */}
+      <div className="absolute top-0 right-0 w-[250px] h-[250px] opacity-30 animate-blow-gradient">
+        <div className="w-full h-full bg-gradient-to-br from-[#8C81FF] via-[#A0A0A0] to-transparent blur-3xl" />
+      </div>
 
-            <div className="text-6xl font-medium m-4 text-balance tracking-wide">
-            <h1 className="p-2 m-1 text-transparent bg-clip-text bg-gradient-to-r from-[#035bff] via-white to-[#4c70b3] "  >A Game changing platform for AI  Inovators</h1>
+      {/* Bottom left blowing gradient */}
+      <div className="absolute bottom-0 left-0 w-[250px] h-[250px] opacity-30 animate-blow-gradient">
+        <div className="w-full h-full bg-gradient-to-tl from-[#1000C1] via-[#8C81FF] to-transparent blur-3xl" />
+      </div>
 
-             
-            </div>
-            <p className="text-xl font-medium p-2">Empowering Stundents and Profesional to Build the Future of AI 
-            Join commuinty of passionate minds developing Inovative AI
-            Soultions for real world problems.</p>
-            <button className=" bg-white  text-black border rounded-2xl p-[2px] m-1"> <span>&nbsp;</span> Join Team Techies  <span>&nbsp;</span>  </button>
-            <button className=" bg-black  text-white border rounded-2xl p-1 m-1">About us</button>
-            
-    
-
+      <div className="relative flex flex-col lg:flex-row items-center justify-between">
+        {/* Lottie Animation */}
+        <div className="w-full lg:w-1/2 order-1 lg:order-2 mb-8 lg:mb-0">
+          <div className="w-full max-w-[600px] mx-auto lg:ml-auto">
+            <DotLottieReact
+              src="https://lottie.host/bcea4257-8c6e-4956-aa7f-9155acc439ca/vHPaDTzOdq.lottie"
+              loop
+              autoplay
+              className="w-full aspect-square rounded-lg shadow-lg"
+            />
+          </div>
         </div>
-{/* 
-        <div className="">
-            <img  src={gifAi} alt="AI" className="ml-40 h-[300px]" />
-            <img  src={img} alt="AI" />
-             <h1 className="p-2 m-1 text-transparent bg-clip-text bg-gradient-to-r from-[#035bff] via-white to-[#4c70b3]">A Game changing </h1>
-              <h1 className="p-2 m-1  text-transparent bg-clip-text bg-gradient-to-r from-[#035bff] via-white to-[#4c70b3]">platform for AI </h1>
-              <h1 className="p-2 m-1 text-transparent bg-clip-text bg-gradient-to-r from-[#035bff] via-white to-[#4c70b3]">Inovators</h1>
 
-        </div> */}
-
+        {/* Text content section */}
+        <div className="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left lg:pr-8 lg:ml-12">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium mb-4 tracking-wide">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#035bff] via-white to-[#4c70b3] leading-tight">
+              A Game changing platform for AI Innovators
+            </span>
+          </h1>
+          <p className="text-base sm:text-lg font-small pl-2 pr-2 mb-6 text-lg md:text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#ffffff] via-white to-[#817e7e]">
+            Empowering Students and Professionals to Build the Future of AI.
+            Join a community of passionate minds developing Innovative AI
+            Solutions that enhance human productivity.
+          </p>
+          {/* <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+            <Link
+              to="about"
+              className="bg-white text-black border rounded-2xl px-6 py-3 hover:bg-opacity-90 transition-colors lg:w-auto sm:w-0.5 text-center"
+            >
+              What we do ?
+            </Link>
+            <Link
+              to="jointeam"
+              className="bg-black text-white border rounded-2xl px-6 py-3 hover:bg-opacity-90 transition-colors lg:w-auto sm:w-0.5 text-center"
+            >
+              Join Team
+            </Link>
+          </div> */} 
+          <div className="flex flex-row justify-center  lg:justify-start gap-4">
+        <Link
+          to="about"
+          className="bg-white text-black border rounded-xl px-2 py-3 hover:bg-opacity-90 transition-colors lg:w-auto text-center"
+        >
+          What we do ?
+        </Link>
+        <Link
+          to="register"
+          className="bg-black text-white border rounded-2xl px-2 py-3 hover:bg-opacity-90 transition-colors lg:w-auto text-center"
+        >
+          Join Community
+        </Link>
+        </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
